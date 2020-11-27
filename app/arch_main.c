@@ -359,16 +359,15 @@ void rw_main(void)
 #if (UART_DRIVER)
 static void uart_rx_handler(uint8_t *buf, uint8_t len)
 {
-	uint8_t write[15]={0};
-	if(buf[0]==0xAA)
+	uint8_t write[7]={0};
+	if(buf[0]==0x55)
 	{
-		write[0]=0x55;
-		write[1]=buf[1];
-		for(int i=2;i<len-2;i++)
+		write[0]=0xAA;
+		for(int i=0;i<6;i++)
 		{
-			write[i]=buf[i];
+			write[i+1]=buf[i+1];
 		}
-		flash_write(FLASH_SPACE_TYPE_MAIN,0x0001e3e0,15,write);
+		flash_write(FLASH_SPACE_TYPE_MAIN,0x0001e3e0,7,write);
 		appm_disconnect();
 		UART_PRINTF("write new name \r\n");
 		wdt_enable(10);

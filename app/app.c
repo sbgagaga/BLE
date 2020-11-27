@@ -106,7 +106,7 @@ static const appm_add_svc_func_t appm_add_svc_func_list[APPM_SVC_LIST_STOP] =
 /// Application Environment Structure
 struct app_env_tag app_env;
 uint8_t read[15]={0};
-char name[15]="FFFFFFFF";//设备名字
+uint8_t name[13]={0xe5,0xae,0x89,0xe4,0xbc,0x97,'_','F','F','F','F','F','F'};//设备名字
 uint8_t first=1;
 /*
  * FUNCTION DEFINITIONS
@@ -122,7 +122,6 @@ uint8_t first=1;
 
 void appm_init()
 {
-	
     // Reset the application manager environment
     memset(&app_env, 0, sizeof(app_env));
     //memset(ADVbuffer,'\0', sizeof(ADVbuffer));
@@ -132,21 +131,21 @@ void appm_init()
 
     // Initialize Task state
     ke_state_set(TASK_APP, APPM_INIT);
-	flash_read(FLASH_SPACE_TYPE_MAIN,0x0001e3e0,15,read);
-	if(read[0]==0x55)
+	flash_read(FLASH_SPACE_TYPE_MAIN,0x0001e3e0,7,read);
+	if(read[0]==0xAA)
 	{
-		for(int i=0;i<read[1];i++)
+		for(int i=0;i<6;i++)
 		{
-			name[i]=read[i]+'0';
+			name[i+7]=read[i+1];
 		}
-		app_env.dev_name_len = 10;
-		memcpy(&app_env.dev_name[0], name, read[1]);
+		app_env.dev_name_len = 13;
+		memcpy(&app_env.dev_name[0], name, 13);
 		UART_PRINTF("read new name\r\n");
 	}
 	else
 	{
-		app_env.dev_name_len = 12;
-		memcpy(&app_env.dev_name[0], name, 12);
+		app_env.dev_name_len = 13;
+		memcpy(&app_env.dev_name[0], name, 13);
 		UART_PRINTF("read old name\r\n");
 	}
 	
@@ -233,17 +232,18 @@ void appm_start_advertising(void)
 	if(first)
 	{
 		first=0;
-		flash_read(FLASH_SPACE_TYPE_MAIN,0x0001e3e0,15,read);
-		if(read[0]==0x55)
+		flash_read(FLASH_SPACE_TYPE_MAIN,0x0001e3e0,7,read);
+		if(read[0]==0xAA)
 		{
-			for(int i=0;i<read[1];i++)
+			for(int i=0;i<6;i++)
 			{
-				name[i]=read[i]+'0';
+				name[i+7]=read[i+1];
 			}
 		}
+		UART_PRINTF("Read:%02x\r\n",read[0]);
+		UART_PRINTF("%c,%c,%c,%c,%c,%c\r\n",read[1],read[2],read[3],read[4],read[5],read[6]);
 	}
 	UART_PRINTF("start adv\r\n");
-	UART_PRINTF("Read:%02x\r\n",read[0]);
     // Check if the advertising procedure is already is progress
     if (ke_state_get(TASK_APP) == APPM_READY)
     {			
@@ -321,9 +321,9 @@ void appm_start_advertising(void)
                          &device_name_temp_buf[0]) != NVDS_OK)
 #endif                         
             {
-                device_name_length = strlen(APP_DFLT_DEVICE_NAME);
+                device_name_length = 13;
                 // Get default Device Name (No name if not enough space)
-                memcpy(&device_name_temp_buf[0], name, 6);//初始名字
+                memcpy(&device_name_temp_buf[0], name, 13);//初始名字
             }
 							
 	     	if(device_name_length > 0)

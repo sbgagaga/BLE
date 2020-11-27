@@ -52,7 +52,7 @@
 
 
 //设备名称
-#define APP_DFLT_DEVICE_NAME           ("FFFFFFFFFF")//
+#define APP_DFLT_DEVICE_NAME           ("FFFFFFFF")//
 										
 
  //广播包UUID配置
