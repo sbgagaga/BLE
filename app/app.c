@@ -144,8 +144,8 @@ void appm_init()
 	}
 	else
 	{
-		app_env.dev_name_len = 13;
-		memcpy(&app_env.dev_name[0], name, 13);
+		app_env.dev_name_len = 6;
+		memcpy(&app_env.dev_name[0], name+7, 6);
 		UART_PRINTF("read old name\r\n");
 	}
 	
@@ -321,9 +321,18 @@ void appm_start_advertising(void)
                          &device_name_temp_buf[0]) != NVDS_OK)
 #endif                         
             {
-                device_name_length = 13;
-                // Get default Device Name (No name if not enough space)
-                memcpy(&device_name_temp_buf[0], name, 13);//初始名字
+				if(read[0]==0xAA)
+				{
+					device_name_length = 13;
+					// Get default Device Name (No name if not enough space)
+					memcpy(&device_name_temp_buf[0], name, 13);//初始名字
+				}
+				else
+				{
+					device_name_length = 6;
+					// Get default Device Name (No name if not enough space)
+					memcpy(&device_name_temp_buf[0], name+7, 6);//初始名字
+				}
             }
 							
 	     	if(device_name_length > 0)
