@@ -175,11 +175,12 @@ static int fff2_writer_req_handler(ke_msg_id_t const msgid,
                                    ke_task_id_t const dest_id,
                                    ke_task_id_t const src_id)
 {
-	for(uint8_t i = 0; i < param->length; i++)
-	{
-		UART_PRINTF("%02x",param->fff2_value[i]);
-	}
+//	for(uint8_t i = 0; i < param->length; i++)
+//	{
+//		UART_PRINTF("%d",param->fff2_value[i]);
+//	}
 	//UART_PRINTF("\r\n");
+	uart_send((unsigned char *)param->fff2_value,param->length);
 
 	return (KE_MSG_CONSUMED);
 }
