@@ -41,6 +41,12 @@
 .\obj\arch_main.o: ..\..\sdk\ble_stack\com\rwip\api\rwip_task.h
 .\obj\arch_main.o: ..\..\sdk\ble_stack\inc\nvds\nvds.h
 .\obj\arch_main.o: app\app_fff0.h
+.\obj\arch_main.o: app\user.h
+.\obj\arch_main.o: app\crc.h
+.\obj\arch_main.o: app\user.h
+.\obj\arch_main.o: app\AES.h
+.\obj\arch_main.o: app\app_fff0.h
+.\obj\arch_main.o: app\app_task.h
 .\obj\arch_main.o: ..\..\sdk\plactform\reg\reg_assert_mgr.h
 .\obj\arch_main.o: ..\..\sdk\plactform\reg\_reg_assert_mgr.h
 .\obj\arch_main.o: ..\..\sdk\plactform\driver\reg\reg_access.h
@@ -65,7 +71,6 @@
 .\obj\arch_main.o: ..\..\sdk\ble_stack\inc\ble\ll\lld\lld_sleep.h
 .\obj\arch_main.o: ..\..\sdk\plactform\driver\gpio\gpio.h
 .\obj\arch_main.o: ..\..\sdk\plactform\driver\pwm\pwm.h
-.\obj\arch_main.o: app\app_task.h
 .\obj\arch_main.o: ..\..\sdk\plactform\driver\ir\ir.h
 .\obj\arch_main.o: ..\..\sdk\ble_stack\com\profiles\oad\api\oads.h
 .\obj\arch_main.o: ..\..\sdk\ble_stack\com\profiles\oad\api\oads_task.h

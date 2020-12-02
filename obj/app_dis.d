@@ -28,6 +28,15 @@
 .\obj\app_dis.o: ..\..\sdk\ble_stack\com\rwip\api\rwip_task.h
 .\obj\app_dis.o: ..\..\sdk\ble_stack\inc\nvds\nvds.h
 .\obj\app_dis.o: app\app_fff0.h
+.\obj\app_dis.o: app\user.h
+.\obj\app_dis.o: app\crc.h
+.\obj\app_dis.o: app\user.h
+.\obj\app_dis.o: app\AES.h
+.\obj\app_dis.o: app\app_fff0.h
+.\obj\app_dis.o: ..\..\sdk\plactform\driver\uart\uart.h
+.\obj\app_dis.o: .\config\user_config.h
+.\obj\app_dis.o: app\app_task.h
+.\obj\app_dis.o: ..\..\sdk\ble_stack\com\rwip\api\rwip.h
 .\obj\app_dis.o: app\app_dis.h
 .\obj\app_dis.o: D:\LoadDown\Kile\ARM\ARMCC\Bin\..\include\string.h
 .\obj\app_dis.o: ..\..\sdk\ble_stack\com\profiles\dis\diss\api\diss_task.h

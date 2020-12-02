@@ -58,6 +58,7 @@
 #include "rtc.h"
 #include "user_config.h"
 #include "app_fff0.h"
+//#include "app_task.h"
 /**
  ****************************************************************************************
  * @addtogroup DRIVERS
@@ -360,23 +361,31 @@ void rw_main(void)
 static void uart_rx_handler(uint8_t *buf, uint8_t len)
 {
 	uint8_t write[7]={0};
-	if(buf[0]==0x55)
+	if(buf[0]==0x66)
 	{
 		write[0]=0xAA;
 		for(int i=0;i<6;i++)
 		{
 			write[i+1]=buf[i+1];
 		}
-		flash_write(FLASH_SPACE_TYPE_MAIN,0x0001e3e0,7,write);
+		flash_erase(FLASH_SPACE_TYPE_MAIN, NAME_ADDR, 7);
+		flash_write(FLASH_SPACE_TYPE_MAIN,NAME_ADDR,7,write);
 		appm_disconnect();
 		UART_PRINTF("write new name \r\n");
-		wdt_enable(10);
+		wdt_enable(20);
 		while(1);
 	}
-	else
+	else if(connect_status_flag)
 	{
-		app_fff1_send_lvl(buf,len);
+		RxRevFlag=1;
+		RxRevCnt=0;
+		for(int i=0;i<len;i++)
+		{
+			p_array[i+p_index]=buf[i];
+		}
+		p_index+=len;
 	}
+	
 }
 #endif
 

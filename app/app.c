@@ -131,7 +131,7 @@ void appm_init()
 
     // Initialize Task state
     ke_state_set(TASK_APP, APPM_INIT);
-	flash_read(FLASH_SPACE_TYPE_MAIN,0x0001e3e0,7,read);
+	flash_read(FLASH_SPACE_TYPE_MAIN,NAME_ADDR,7,read);
 	if(read[0]==0xAA)
 	{
 		for(int i=0;i<6;i++)
@@ -232,7 +232,7 @@ void appm_start_advertising(void)
 	if(first)
 	{
 		first=0;
-		flash_read(FLASH_SPACE_TYPE_MAIN,0x0001e3e0,7,read);
+		flash_read(FLASH_SPACE_TYPE_MAIN,NAME_ADDR,7,read);
 		if(read[0]==0xAA)
 		{
 			for(int i=0;i<6;i++)
@@ -241,7 +241,7 @@ void appm_start_advertising(void)
 			}
 		}
 		UART_PRINTF("Read:%02x\r\n",read[0]);
-		UART_PRINTF("%c,%c,%c,%c,%c,%c\r\n",read[1],read[2],read[3],read[4],read[5],read[6]);
+		UART_PRINTF("%c%c%c%c%c%c\r\n",read[1],read[2],read[3],read[4],read[5],read[6]);
 	}
 	UART_PRINTF("start adv\r\n");
     // Check if the advertising procedure is already is progress
@@ -326,12 +326,14 @@ void appm_start_advertising(void)
 					device_name_length = 13;
 					// Get default Device Name (No name if not enough space)
 					memcpy(&device_name_temp_buf[0], name, 13);//初始名字
+					//UART_PRINTF("init new name\r\n");
 				}
 				else
 				{
 					device_name_length = 6;
 					// Get default Device Name (No name if not enough space)
 					memcpy(&device_name_temp_buf[0], name+7, 6);//初始名字
+					//UART_PRINTF("init old name\r\n");
 				}
             }
 							

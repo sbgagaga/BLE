@@ -39,6 +39,13 @@
 .\obj\rwip.o: .\app\app.h
 .\obj\rwip.o: ..\..\sdk\ble_stack\inc\nvds\nvds.h
 .\obj\rwip.o: .\app\app_fff0.h
+.\obj\rwip.o: .\app\user.h
+.\obj\rwip.o: .\app\crc.h
+.\obj\rwip.o: .\app\user.h
+.\obj\rwip.o: .\app\AES.h
+.\obj\rwip.o: .\app\app_fff0.h
+.\obj\rwip.o: ..\..\sdk\plactform\driver\uart\uart.h
+.\obj\rwip.o: .\app\app_task.h
 .\obj\rwip.o: ..\..\sdk\ble_stack\inc\ble\ll\lld\lld_sleep.h
 .\obj\rwip.o: ..\..\sdk\ble_stack\inc\ble\ll\llc\llc.h
 .\obj\rwip.o: ..\..\sdk\plactform\core_modules\common\api\co_llcp.h
@@ -81,6 +88,5 @@
 .\obj\rwip.o: ..\..\sdk\ble_stack\inc\ke\ke_mem.h
 .\obj\rwip.o: ..\..\sdk\plactform\core_modules\dbg\api\dbg.h
 .\obj\rwip.o: ..\..\sdk\plactform\core_modules\dbg\api\dbg_swdiag.h
-.\obj\rwip.o: ..\..\sdk\plactform\driver\uart\uart.h
 .\obj\rwip.o: ..\..\sdk\plactform\driver\wdt\wdt.h
 .\obj\rwip.o: ..\..\sdk\plactform\driver\icu\icu.h

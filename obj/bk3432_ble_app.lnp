@@ -32,6 +32,9 @@
 ".\obj\app_fff0.o"
 ".\obj\app_task.o"
 ".\obj\app_oads.o"
+".\obj\aes.o"
+".\obj\crc.o"
+".\obj\user.o"
 --library_type=microlib --nodebug --scatter "..\..\sdk\project_files\gatt_link_app.txt"
 --entry sys_Reset --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

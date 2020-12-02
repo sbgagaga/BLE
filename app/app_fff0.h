@@ -36,7 +36,7 @@
 
 #include <stdint.h>          // Standard Integer Definition
 #include "ke_task.h"         // Kernel Task Definition
-
+#include "user.h"
 /*
  * STRUCTURES DEFINITION
  ****************************************************************************************

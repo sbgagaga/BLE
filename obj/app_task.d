@@ -19,6 +19,14 @@
 .\obj\app_task.o: ..\..\sdk\plactform\arch\ll\ll.h
 .\obj\app_task.o: ..\..\sdk\ble_stack\inc\ke\ke_config.h
 .\obj\app_task.o: ..\..\sdk\plactform\core_modules\common\api\co_list.h
+.\obj\app_task.o: app\user.h
+.\obj\app_task.o: app\crc.h
+.\obj\app_task.o: app\user.h
+.\obj\app_task.o: app\AES.h
+.\obj\app_task.o: app\app_fff0.h
+.\obj\app_task.o: ..\..\sdk\plactform\driver\uart\uart.h
+.\obj\app_task.o: .\config\user_config.h
+.\obj\app_task.o: app\app_task.h
 .\obj\app_task.o: app\app.h
 .\obj\app_task.o: ..\..\sdk\plactform\core_modules\common\api\co_bt.h
 .\obj\app_task.o: ..\..\sdk\plactform\core_modules\common\api\co_lmp.h
@@ -30,7 +38,6 @@
 .\obj\app_task.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\smpc\smpc.h
 .\obj\app_task.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\gapc\gapc_task.h
 .\obj\app_task.o: ..\..\sdk\ble_stack\inc\nvds\nvds.h
-.\obj\app_task.o: app\app_fff0.h
 .\obj\app_task.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\gapm\gapm_task.h
 .\obj\app_task.o: ..\..\sdk\ble_stack\inc\ble\hl\gatt\gattc\gattc_task.h
 .\obj\app_task.o: ..\..\sdk\ble_stack\inc\ble\hl\gatt\att.h
@@ -52,8 +59,6 @@
 .\obj\app_task.o: ..\..\sdk\ble_stack\inc\ble\hl\l2c\l2cc\l2cc_pdu.h
 .\obj\app_task.o: ..\..\sdk\plactform\driver\gpio\gpio.h
 .\obj\app_task.o: ..\..\sdk\plactform\arch\BK3432_reg.h
-.\obj\app_task.o: ..\..\sdk\plactform\driver\uart\uart.h
-.\obj\app_task.o: .\config\user_config.h
 .\obj\app_task.o: ..\..\sdk\plactform\driver\icu\icu.h
 .\obj\app_task.o: ..\..\sdk\plactform\reg\reg_ble_em_cs.h
 .\obj\app_task.o: ..\..\sdk\plactform\reg\_reg_ble_em_cs.h

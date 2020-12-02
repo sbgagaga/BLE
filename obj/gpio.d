@@ -54,6 +54,11 @@
 .\obj\gpio.o: ..\..\sdk\ble_stack\com\rwip\api\rwip_task.h
 .\obj\gpio.o: ..\..\sdk\ble_stack\inc\nvds\nvds.h
 .\obj\gpio.o: .\app\app_fff0.h
-.\obj\gpio.o: .\app\app_task.h
+.\obj\gpio.o: .\app\user.h
+.\obj\gpio.o: .\app\crc.h
+.\obj\gpio.o: .\app\user.h
+.\obj\gpio.o: .\app\AES.h
+.\obj\gpio.o: .\app\app_fff0.h
 .\obj\gpio.o: ..\..\sdk\plactform\driver\uart\uart.h
 .\obj\gpio.o: .\config\user_config.h
+.\obj\gpio.o: .\app\app_task.h

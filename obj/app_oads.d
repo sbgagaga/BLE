@@ -41,6 +41,13 @@
 .\obj\app_oads.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\gapc\gapc_task.h
 .\obj\app_oads.o: ..\..\sdk\ble_stack\inc\nvds\nvds.h
 .\obj\app_oads.o: app\app_fff0.h
+.\obj\app_oads.o: app\user.h
+.\obj\app_oads.o: app\crc.h
+.\obj\app_oads.o: app\user.h
+.\obj\app_oads.o: app\AES.h
+.\obj\app_oads.o: app\app_fff0.h
+.\obj\app_oads.o: ..\..\sdk\plactform\driver\uart\uart.h
+.\obj\app_oads.o: .\config\user_config.h
 .\obj\app_oads.o: app\app_task.h
 .\obj\app_oads.o: ..\..\sdk\ble_stack\com\rwip\api\rwip.h
 .\obj\app_oads.o: ..\..\sdk\ble_stack\inc\ble\ll\lld\lld_evt.h
@@ -70,5 +77,3 @@
 .\obj\app_oads.o: ..\..\sdk\ble_stack\inc\ble\ll\llm\llm_task.h
 .\obj\app_oads.o: ..\..\sdk\ble_stack\inc\ea\ea.h
 .\obj\app_oads.o: ..\..\sdk\ble_stack\inc\ble\ll\llc\llc_task.h
-.\obj\app_oads.o: ..\..\sdk\plactform\driver\uart\uart.h
-.\obj\app_oads.o: .\config\user_config.h

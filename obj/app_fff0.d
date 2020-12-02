@@ -17,6 +17,16 @@
 .\obj\app_fff0.o: ..\..\sdk\plactform\arch\ll\ll.h
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\inc\ke\ke_config.h
 .\obj\app_fff0.o: ..\..\sdk\plactform\core_modules\common\api\co_list.h
+.\obj\app_fff0.o: app\user.h
+.\obj\app_fff0.o: app\crc.h
+.\obj\app_fff0.o: app\user.h
+.\obj\app_fff0.o: app\AES.h
+.\obj\app_fff0.o: app\app_fff0.h
+.\obj\app_fff0.o: ..\..\sdk\plactform\driver\uart\uart.h
+.\obj\app_fff0.o: .\config\user_config.h
+.\obj\app_fff0.o: app\app_task.h
+.\obj\app_fff0.o: ..\..\sdk\ble_stack\com\rwip\api\rwip.h
+.\obj\app_fff0.o: ..\..\sdk\ble_stack\com\rwip\api\rwip_task.h
 .\obj\app_fff0.o: app\app.h
 .\obj\app_fff0.o: ..\..\sdk\plactform\core_modules\common\api\co_bt.h
 .\obj\app_fff0.o: ..\..\sdk\plactform\core_modules\common\api\co_lmp.h
@@ -27,10 +37,7 @@
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\gap.h
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\smpc\smpc.h
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\gapc\gapc_task.h
-.\obj\app_fff0.o: ..\..\sdk\ble_stack\com\rwip\api\rwip_task.h
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\inc\nvds\nvds.h
-.\obj\app_fff0.o: app\app_task.h
-.\obj\app_fff0.o: ..\..\sdk\ble_stack\com\rwip\api\rwip.h
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\com\profiles\FFF0\api\Fff0s_task.h
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\com\prf\prf_types.h
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\inc\ble\hl\gatt\att.h
@@ -43,5 +50,3 @@
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\inc\ble\hl\l2c\l2cc\l2cc_task.h
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\inc\ble\hl\l2c\l2cc\l2cc_pdu.h
 .\obj\app_fff0.o: ..\..\sdk\ble_stack\inc\ke\ke_timer.h
-.\obj\app_fff0.o: ..\..\sdk\plactform\driver\uart\uart.h
-.\obj\app_fff0.o: .\config\user_config.h

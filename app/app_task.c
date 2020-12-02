@@ -44,7 +44,12 @@
 #include "lld.h"
 #include "wdt.h"
 
-
+uint8_t TxDatePackEnd=0;
+uint8_t connect_status_flag = 0;//ZY
+uint32_t connect_timeout_cnt = 0;
+uint8_t RxRevFlag=0;
+uint8_t RxRevCnt=0;
+uint8_t p_index=0;
 /*
  * LOCAL FUNCTION DEFINITIONS
  ****************************************************************************************
@@ -376,12 +381,17 @@ static int gapc_connection_req_ind_handler(ke_msg_id_t const msgid,
 		
 		#if UPDATE_CONNENCT_PARAM
 		ke_timer_set(APP_PARAM_UPDATE_REQ_IND,TASK_APP,100); 
+		connect_status_flag=1;
+		/*启动系统定时器*/
+		ke_timer_set(APP_SYS_TIMER,TASK_APP,TIMER_UNIT);//ZY
+		UART_PRINTF("start timer \r\n");
 		#endif	
 	        
     }
     else
     {
         // No connection has been establish, restart advertising
+		connect_status_flag=0;
 		appm_start_advertising();
     }
 
@@ -557,6 +567,91 @@ static int app_period_timer_handler(ke_msg_id_t const msgid,
     return KE_MSG_CONSUMED;
 }
 
+static int app_sys_timer_handler(ke_msg_id_t const msgid,//ZY
+                                          void *param,
+                                          ke_task_id_t const dest_id,
+                                          ke_task_id_t const src_id)
+{
+	static uint8_t SendDelayCnt=Send_Delay_Numb;
+	static uint8_t SendIndex=0;
+	uint16_t result=0;
+	/*定时断开蓝牙*/
+	if(connect_status_flag)
+	{
+		connect_timeout_cnt++;
+		if(connect_timeout_cnt>3000)
+		{
+			connect_timeout_cnt=0;
+			connect_status_flag=0;
+			appm_disconnect();
+		}
+	}
+	else
+	{
+		connect_timeout_cnt=0;
+	}
+	
+	/*超过最少10ms不再接收到UART数据判定为数据接收完毕*/
+	if(RxRevFlag)
+	{
+		RxRevCnt++;
+		if(RxRevCnt>=2)
+		{
+			RxRevCnt=0;
+			RxRevFlag=0;
+			p_len=p_index;
+			p_index=0;
+			aes(encrypt,key,iv);
+			result=CRC16_CCITT_FALSE(c_array,c_len);
+			c_array[c_len++]=(result>>8);
+			c_array[c_len++]=(uint8_t)result;
+			TxDateLen=c_len;
+			TxSendDatePackPro();
+		}
+	}
+	
+	/*接收数据每帧间隔不可超过1s*/
+	if(BLERevFlag)
+	{
+		BLERevTimeout++;
+		if(BLERevTimeout>=100)
+		{
+			BLERevTimeout=0;
+			BLERevFlag=0;
+			UartRsp(BLE_ERR);
+			UartParaClear();
+		}
+	}
+	
+	/*发送数据每帧数据间隔150mS*/
+	if(TxDatePackEnd)
+	{
+		SendDelayCnt++;
+		if(SendDelayCnt>=Send_Delay_Numb)
+		{
+			SendDelayCnt=0;
+			if(TxDateLen>=Tx_Max_Numb)
+			{
+				app_fff1_send_lvl(TxDateBuf+SendIndex,Tx_Max_Numb);
+				TxDateLen-=Tx_Max_Numb;
+				SendIndex+=Tx_Max_Numb;
+			}
+			else if(TxDateLen<Tx_Max_Numb)
+			{
+				app_fff1_send_lvl(TxDateBuf+SendIndex,TxDateLen);
+				SendDelayCnt=Send_Delay_Numb;
+				SendIndex=0;
+				TxDatePackEnd=0;
+				p_len=0;
+				c_len=0;
+				TxDateLen=0;
+			}
+			
+		}
+	}
+	ke_timer_set(APP_SYS_TIMER,TASK_APP,TIMER_UNIT); //ZY
+    return KE_MSG_CONSUMED;
+}
 
 /**
  ****************************************************************************************
@@ -780,6 +875,7 @@ const struct ke_msg_handler appm_default_state[] =
     {GAPC_PARAM_UPDATE_REQ_IND, 	(ke_msg_func_t)gapc_param_update_req_ind_handler},
     {APP_PARAM_UPDATE_REQ_IND, 		(ke_msg_func_t)gapc_update_conn_param_req_ind_handler},
     {APP_PERIOD_TIMER,				(ke_msg_func_t)app_period_timer_handler},
+	{APP_SYS_TIMER,		     		(ke_msg_func_t)app_sys_timer_handler},
 };
 
 /* Specifies the message handlers that are common to all states. */

@@ -30,6 +30,13 @@
 .\obj\app_batt.o: ..\..\sdk\ble_stack\com\rwip\api\rwip_task.h
 .\obj\app_batt.o: ..\..\sdk\ble_stack\inc\nvds\nvds.h
 .\obj\app_batt.o: app\app_fff0.h
+.\obj\app_batt.o: app\user.h
+.\obj\app_batt.o: app\crc.h
+.\obj\app_batt.o: app\user.h
+.\obj\app_batt.o: app\AES.h
+.\obj\app_batt.o: app\app_fff0.h
+.\obj\app_batt.o: ..\..\sdk\plactform\driver\uart\uart.h
+.\obj\app_batt.o: .\config\user_config.h
 .\obj\app_batt.o: app\app_task.h
 .\obj\app_batt.o: ..\..\sdk\ble_stack\com\rwip\api\rwip.h
 .\obj\app_batt.o: ..\..\sdk\ble_stack\com\profiles\bas\bass\api\bass_task.h

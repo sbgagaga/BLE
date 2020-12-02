@@ -19,6 +19,14 @@
 .\obj\app.o: ..\..\sdk\plactform\arch\ll\ll.h
 .\obj\app.o: ..\..\sdk\ble_stack\inc\ke\ke_config.h
 .\obj\app.o: ..\..\sdk\plactform\core_modules\common\api\co_list.h
+.\obj\app.o: app\user.h
+.\obj\app.o: app\crc.h
+.\obj\app.o: app\user.h
+.\obj\app.o: app\AES.h
+.\obj\app.o: app\app_fff0.h
+.\obj\app.o: ..\..\sdk\plactform\driver\uart\uart.h
+.\obj\app.o: .\config\user_config.h
+.\obj\app.o: app\app_task.h
 .\obj\app.o: app\app.h
 .\obj\app.o: ..\..\sdk\plactform\core_modules\common\api\co_bt.h
 .\obj\app.o: ..\..\sdk\plactform\core_modules\common\api\co_lmp.h
@@ -30,7 +38,6 @@
 .\obj\app.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\smpc\smpc.h
 .\obj\app.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\gapc\gapc_task.h
 .\obj\app.o: ..\..\sdk\ble_stack\inc\nvds\nvds.h
-.\obj\app.o: app\app_fff0.h
 .\obj\app.o: ..\..\sdk\ble_stack\inc\ble\hl\gap\gapm\gapm_task.h
 .\obj\app.o: ..\..\sdk\plactform\core_modules\common\api\co_math.h
 .\obj\app.o: D:\LoadDown\Kile\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -49,8 +56,6 @@
 .\obj\app.o: ..\..\sdk\ble_stack\inc\ble\hl\l2c\l2cc\l2cc_pdu.h
 .\obj\app.o: ..\..\sdk\ble_stack\com\prf\prf.h
 .\obj\app.o: ..\..\sdk\plactform\core_modules\rf\api\rf.h
-.\obj\app.o: ..\..\sdk\plactform\driver\uart\uart.h
-.\obj\app.o: .\config\user_config.h
 .\obj\app.o: ..\..\sdk\plactform\driver\adc\adc.h
 .\obj\app.o: ..\..\sdk\plactform\driver\gpio\gpio.h
 .\obj\app.o: ..\..\sdk\plactform\arch\BK3432_reg.h

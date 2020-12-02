@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\obj\bk3432_ble_app.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\obj\bk3432_ble_app.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Nov 30 16:09:24 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Dec 02 15:10:30 2020
 <BR><P>
 <H3>Maximum Stack Usage =          0 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -23,13 +23,14 @@ Function Pointers
  <LI><a href="#[4f]">app_batt_add_bas</a> from app_batt.o(.text) referenced from app.o(.constdata)
  <LI><a href="#[51]">app_batt_msg_dflt_handler</a> from app_batt.o(.text) referenced from app_batt.o(.constdata)
  <LI><a href="#[4e]">app_dis_add_dis</a> from app_dis.o(.text) referenced from app.o(.constdata)
- <LI><a href="#[6c]">app_ffc1_writer_req_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
- <LI><a href="#[6e]">app_ffc2_writer_req_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
+ <LI><a href="#[6d]">app_ffc1_writer_req_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
+ <LI><a href="#[6f]">app_ffc2_writer_req_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
  <LI><a href="#[4d]">app_fff0_add_fff0s</a> from app_fff0.o(.text) referenced from app.o(.constdata)
  <LI><a href="#[56]">app_fff0_msg_dflt_handler</a> from app_fff0.o(.text) referenced from app_fff0.o(.constdata)
  <LI><a href="#[50]">app_oad_add_oads</a> from app_oads.o(.text) referenced from app.o(.constdata)
- <LI><a href="#[6a]">app_oads_msg_dflt_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
+ <LI><a href="#[6b]">app_oads_msg_dflt_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
  <LI><a href="#[69]">app_period_timer_handler</a> from app_task.o(.text) referenced from app_task.o(.constdata)
+ <LI><a href="#[6a]">app_sys_timer_handler</a> from app_task.o(.text) referenced from app_task.o(.constdata)
  <LI><a href="#[5b]">appm_msg_handler</a> from app_task.o(.text) referenced from app_task.o(.constdata)
  <LI><a href="#[17]">assert_err</a> from arch_main.o(.text) referenced from arch_main.o(.text)
  <LI><a href="#[18]">assert_param</a> from arch_main.o(.text) referenced from arch_main.o(.text)
@@ -79,11 +80,11 @@ Function Pointers
  <LI><a href="#[45]">oads_create</a> from oads.o(.text) referenced from oads.o(.constdata)
  <LI><a href="#[44]">oads_destroy</a> from oads.o(.text) referenced from oads.o(.constdata)
  <LI><a href="#[47]">oads_enable_req_handler</a> from oads_task.o(.text) referenced from oads_task.o(.constdata)
- <LI><a href="#[6b]">oads_enable_rsp_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
+ <LI><a href="#[6c]">oads_enable_rsp_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
  <LI><a href="#[48]">oads_ffc1_upd_req_handler</a> from oads_task.o(.text) referenced from oads_task.o(.constdata)
- <LI><a href="#[6d]">oads_ffc1_upd_rsp_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
+ <LI><a href="#[6e]">oads_ffc1_upd_rsp_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
  <LI><a href="#[49]">oads_ffc2_upd_req_handler</a> from oads_task.o(.text) referenced from oads_task.o(.constdata)
- <LI><a href="#[6f]">oads_ffc2_upd_rsp_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
+ <LI><a href="#[70]">oads_ffc2_upd_rsp_handler</a> from app_oads.o(.text) referenced from app_oads.o(.constdata)
  <LI><a href="#[43]">oads_init</a> from oads.o(.text) referenced from oads.o(.constdata)
  <LI><a href="#[16]">platform_reset</a> from arch_main.o(.text) referenced from arch_main.o(.text)
  <LI><a href="#[e]">prf_add_profile</a> from prf.o(.text) referenced from arch_main.o(.text)
@@ -106,7 +107,7 @@ Function Pointers
  <LI><a href="#[13]">rwip_sleep_lpcycles_2_us</a> from rwip.o(.text) referenced from arch_main.o(.text)
  <LI><a href="#[14]">rwip_us_2_lpcycles</a> from rwip.o(.text) referenced from arch_main.o(.text)
  <LI><a href="#[15]">rwip_wakeup_delay_set</a> from rwip.o(.text) referenced from arch_main.o(.text)
- <LI><a href="#[70]">sys_Reset</a> from boot_handlers.o(SYS_BOOT) referenced from boot_vectors.o(SYS_BOOT)
+ <LI><a href="#[71]">sys_Reset</a> from boot_handlers.o(SYS_BOOT) referenced from boot_vectors.o(SYS_BOOT)
  <LI><a href="#[5]">sys_reserved</a> from boot_vectors.o(SYS_BOOT) referenced from boot_vectors.o(SYS_BOOT)
  <LI><a href="#[1a]">uart_clear_rxfifo</a> from uart.o(.text) referenced from arch_main.o(.text)
  <LI><a href="#[1e]">uart_flow_off</a> from uart.o(.text) referenced from arch_main.o(.text)
@@ -122,52 +123,52 @@ Function Pointers
 Global Symbols
 </H3>
 <P><STRONG><a name="[e3]"></a>uart_stack_register</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 </UL>
 
-<P><STRONG><a name="[13a]"></a>Undefined_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[159]"></a>Undefined_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undefined (via Veneer)
 </UL>
 
-<P><STRONG><a name="[13b]"></a>SoftwareInterrupt_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[15a]"></a>SoftwareInterrupt_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SoftwareInterrupt (via Veneer)
 </UL>
 
-<P><STRONG><a name="[13c]"></a>PrefetchAbort_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[15b]"></a>PrefetchAbort_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefetchAbort (via Veneer)
 </UL>
 
-<P><STRONG><a name="[13d]"></a>DataAbort_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[15c]"></a>DataAbort_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataAbort (via Veneer)
 </UL>
 
-<P><STRONG><a name="[13e]"></a>Reserved_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[15d]"></a>Reserved_Exception</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_reserved (via Veneer)
 </UL>
 
-<P><STRONG><a name="[ae]"></a>ke_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<P><STRONG><a name="[af]"></a>ke_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
-<P><STRONG><a name="[b8]"></a>ke_flush</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[b9]"></a>ke_flush</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_reset
 </UL>
 
-<P><STRONG><a name="[be]"></a>ke_sleep_check</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<P><STRONG><a name="[bf]"></a>ke_sleep_check</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
 </UL>
 
-<P><STRONG><a name="[c9]"></a>ke_event_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[ca]"></a>ke_event_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_isr
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_end
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_end
 </UL>
 
-<P><STRONG><a name="[bc]"></a>ke_event_schedule</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_schedule
+<P><STRONG><a name="[bd]"></a>ke_event_schedule</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_schedule
 </UL>
 
-<P><STRONG><a name="[af]"></a>ke_mem_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<P><STRONG><a name="[b0]"></a>ke_mem_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
 <P><STRONG><a name="[e8]"></a>ke_malloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
@@ -208,17 +209,17 @@ Global Symbols
 <LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_enable_req_handler
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_exe_operation
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_notify_batt_lvl
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_disconnect
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc2_ntf_req
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc1_ntf_req
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_oads_enable_prf
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_disconnect
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc2_ntf_req
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc1_ntf_req
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_oads_enable_prf
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_param_update_req_ind_handler
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_set_dev_info_req_ind_handler
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_get_dev_info_req_ind_handler
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_cmp_evt_handler
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_device_ready_ind_handler
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_value_req_ind_handler
 <LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_batt_send_lvl
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_batt_enable_prf
@@ -253,17 +254,17 @@ Global Symbols
 <LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_enable_req_handler
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_exe_operation
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_notify_batt_lvl
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_disconnect
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc2_ntf_req
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc1_ntf_req
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_oads_enable_prf
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_disconnect
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc2_ntf_req
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc1_ntf_req
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_oads_enable_prf
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_param_update_req_ind_handler
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_set_dev_info_req_ind_handler
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_get_dev_info_req_ind_handler
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_cmp_evt_handler
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_device_ready_ind_handler
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_value_req_ind_handler
 <LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_batt_send_lvl
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_batt_enable_prf
@@ -280,7 +281,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[115]"></a>ke_task_create</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
+<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_init
 </UL>
 
@@ -296,7 +297,7 @@ Global Symbols
 <LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_enable_req_handler
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_exe_operation
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_init
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_disconnect_ind_handler
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_cmp_evt_handler
@@ -324,16 +325,17 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_init
 </UL>
 
-<P><STRONG><a name="[122]"></a>ke_timer_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
+<P><STRONG><a name="[123]"></a>ke_timer_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sys_timer_handler
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
 </UL>
 
-<P><STRONG><a name="[c0]"></a>ke_timer_sleep_check</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<P><STRONG><a name="[c1]"></a>ke_timer_sleep_check</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
 </UL>
 
-<P><STRONG><a name="[b5]"></a>dbg_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<P><STRONG><a name="[b6]"></a>dbg_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
 <P><STRONG><a name="[fa]"></a>co_list_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
@@ -352,80 +354,80 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_set_value_req_handler
 </UL>
 
-<P><STRONG><a name="[9d]"></a>em_buf_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
+<P><STRONG><a name="[9e]"></a>em_buf_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
 </UL>
 
-<P><STRONG><a name="[9f]"></a>llc_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
+<P><STRONG><a name="[a0]"></a>llc_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
 </UL>
 
-<P><STRONG><a name="[a4]"></a>llc_reset</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
+<P><STRONG><a name="[a5]"></a>llc_reset</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
 </UL>
 
-<P><STRONG><a name="[9e]"></a>lld_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
+<P><STRONG><a name="[9f]"></a>lld_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
 </UL>
 
-<P><STRONG><a name="[a3]"></a>lld_core_reset</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
+<P><STRONG><a name="[a4]"></a>lld_core_reset</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
 </UL>
 
-<P><STRONG><a name="[ad]"></a>lld_crypt_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<P><STRONG><a name="[ae]"></a>lld_crypt_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
 </UL>
 
-<P><STRONG><a name="[ac]"></a>lld_evt_timer_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<P><STRONG><a name="[ad]"></a>lld_evt_timer_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
 </UL>
 
-<P><STRONG><a name="[a9]"></a>lld_evt_end_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<P><STRONG><a name="[aa]"></a>lld_evt_end_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
 </UL>
 
-<P><STRONG><a name="[aa]"></a>lld_evt_rx_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<P><STRONG><a name="[ab]"></a>lld_evt_rx_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
 </UL>
 
-<P><STRONG><a name="[c5]"></a>lld_sleep_enter</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<P><STRONG><a name="[c6]"></a>lld_sleep_enter</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
 </UL>
 
-<P><STRONG><a name="[c6]"></a>lld_sleep_wakeup</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
+<P><STRONG><a name="[c7]"></a>lld_sleep_wakeup</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
 </UL>
 
-<P><STRONG><a name="[c8]"></a>lld_sleep_wakeup_end</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_end
+<P><STRONG><a name="[c9]"></a>lld_sleep_wakeup_end</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_end
 </UL>
 
-<P><STRONG><a name="[a0]"></a>llm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
+<P><STRONG><a name="[a1]"></a>llm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
 </UL>
 
-<P><STRONG><a name="[a1]"></a>llm_ble_ready</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
+<P><STRONG><a name="[a2]"></a>llm_ble_ready</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
 </UL>
 
-<P><STRONG><a name="[b6]"></a>ea_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[b7]"></a>ea_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_reset
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
-<P><STRONG><a name="[a8]"></a>ea_finetimer_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<P><STRONG><a name="[a9]"></a>ea_finetimer_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
 </UL>
 
-<P><STRONG><a name="[ab]"></a>ea_sw_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<P><STRONG><a name="[ac]"></a>ea_sw_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
 </UL>
 
-<P><STRONG><a name="[c2]"></a>ea_sleep_check</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<P><STRONG><a name="[c3]"></a>ea_sleep_check</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
 </UL>
 
 <P><STRONG><a name="[f6]"></a>gapc_get_conhdl</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
@@ -433,8 +435,8 @@ Global Symbols
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oads_enable_req_handler
 </UL>
 
-<P><STRONG><a name="[99]"></a>gapm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
+<P><STRONG><a name="[9a]"></a>gapm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_reset
 </UL>
 
@@ -454,61 +456,61 @@ Global Symbols
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_init
 </UL>
 
-<P><STRONG><a name="[98]"></a>attm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
+<P><STRONG><a name="[99]"></a>attm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_reset
 </UL>
 
-<P><STRONG><a name="[9a]"></a>gattm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
+<P><STRONG><a name="[9b]"></a>gattm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_reset
 </UL>
 
-<P><STRONG><a name="[9b]"></a>l2cm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
+<P><STRONG><a name="[9c]"></a>l2cm_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_reset
 </UL>
 
-<P><STRONG><a name="[b3]"></a>hci_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<P><STRONG><a name="[b4]"></a>hci_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
-<P><STRONG><a name="[b9]"></a>hci_reset</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[ba]"></a>hci_reset</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_reset
 </UL>
 
-<P><STRONG><a name="[b4]"></a>ahi_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<P><STRONG><a name="[b5]"></a>ahi_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
-<P><STRONG><a name="[b2]"></a>h4tl_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<P><STRONG><a name="[b3]"></a>h4tl_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
-<P><STRONG><a name="[c7]"></a>h4tl_start</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
+<P><STRONG><a name="[c8]"></a>h4tl_start</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
 </UL>
 
-<P><STRONG><a name="[c3]"></a>h4tl_stop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<P><STRONG><a name="[c4]"></a>h4tl_stop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
 </UL>
 
-<P><STRONG><a name="[ca]"></a>__aeabi_uidivmod</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[cb]"></a>__aeabi_uidivmod</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kmod_calibration
 <LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_us_2_lpcycles
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
 <P><STRONG><a name="[116]"></a>rand</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
+<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
 </UL>
 
-<P><STRONG><a name="[89]"></a>srand</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<P><STRONG><a name="[8a]"></a>srand</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
-<P><STRONG><a name="[7d]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[7e]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oad_save_reciveData
 <LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fff0s_notify_fff1_lvl
@@ -516,11 +518,11 @@ Global Symbols
 <LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_read_req_ind_handler
 <LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_set_value_req_handler
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_init
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bdaddr_env_init
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bdaddr_env_init
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_cmp_evt_handler
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_value_req_ind_handler
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBleName
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_get_dev_name
@@ -536,71 +538,71 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[10e]"></a>__aeabi_memclr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
+<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
 <LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
 </UL>
 
-<P><STRONG><a name="[83]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<P><STRONG><a name="[84]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fff0s_init
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bass_init
 <LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_clear_rxfifo
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rom_env_init
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rom_env_init
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBleName
 <LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_read_req_ind_handler
 </UL>
 
-<P><STRONG><a name="[133]"></a>__ARM_clz</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue (via BLX)
+<P><STRONG><a name="[152]"></a>__ARM_clz</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue (via BLX)
 </UL>
 
-<P><STRONG><a name="[77]"></a>__ARM_common_disable_fiq</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset (via BLX)
+<P><STRONG><a name="[78]"></a>__ARM_common_disable_fiq</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset (via BLX)
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_reset (via BLX)
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_set (via BLX)
 <LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_clear (via BLX)
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_reset (via BLX)
 </UL>
 
-<P><STRONG><a name="[78]"></a>__ARM_common_disable_irq</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset (via BLX)
+<P><STRONG><a name="[79]"></a>__ARM_common_disable_irq</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset (via BLX)
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_reset (via BLX)
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_set (via BLX)
 <LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_clear (via BLX)
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_reset (via BLX)
 </UL>
 
-<P><STRONG><a name="[93]"></a>__ARM_common_enable_fiq</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset (via BLX)
+<P><STRONG><a name="[94]"></a>__ARM_common_enable_fiq</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset (via BLX)
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_reset (via BLX)
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_set (via BLX)
 <LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_clear (via BLX)
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main (via BLX)
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main (via BLX)
 </UL>
 
-<P><STRONG><a name="[94]"></a>__ARM_common_enable_irq</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset (via BLX)
+<P><STRONG><a name="[95]"></a>__ARM_common_enable_irq</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset (via BLX)
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_reset (via BLX)
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_set (via BLX)
 <LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_clear (via BLX)
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main (via BLX)
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main (via BLX)
 </UL>
 
 <P><STRONG><a name="[11f]"></a>__ARM_common_switch8</STRONG> (ARM, 0 bytes, Stack size 0 bytes, stack_rom_symbol.txt(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_value_req_ind_handler (via BLX)
 </UL>
 
-<P><STRONG><a name="[70]"></a>sys_Reset</STRONG> (ARM, 0 bytes, Stack size 0 bytes, boot_handlers.o(SYS_BOOT))
-<BR><BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main (via Veneer)
+<P><STRONG><a name="[71]"></a>sys_Reset</STRONG> (ARM, 0 bytes, Stack size 0 bytes, boot_handlers.o(SYS_BOOT))
+<BR><BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main (via Veneer)
 </UL>
 
-<P><STRONG><a name="[71]"></a>SYSirq_FIQ_Handler</STRONG> (ARM, 16 bytes, Stack size 0 bytes, intc.o(sys_fiq_entry))
-<BR><BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Exception (via BLX)
+<P><STRONG><a name="[72]"></a>SYSirq_FIQ_Handler</STRONG> (ARM, 16 bytes, Stack size 0 bytes, intc.o(sys_fiq_entry))
+<BR><BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Exception (via BLX)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
 </UL>
 
-<P><STRONG><a name="[73]"></a>SYSirq_IRQ_Handler</STRONG> (ARM, 16 bytes, Stack size 0 bytes, intc.o(sys_irq_entry))
-<BR><BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception (via BLX)
+<P><STRONG><a name="[74]"></a>SYSirq_IRQ_Handler</STRONG> (ARM, 16 bytes, Stack size 0 bytes, intc.o(sys_irq_entry))
+<BR><BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception (via BLX)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
 </UL>
@@ -608,7 +610,7 @@ Global Symbols
 <P><STRONG><a name="[17]"></a>assert_err</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, arch_main.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
 <LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_write
 <LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_read
 <LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep_lpcycles_2_us
@@ -620,239 +622,239 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[75]"></a>assert_warn</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, arch_main.o(.text), UNUSED)
+<P><STRONG><a name="[76]"></a>assert_warn</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, arch_main.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 </UL>
 
-<P><STRONG><a name="[76]"></a>dump_data</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, arch_main.o(.text), UNUSED)
+<P><STRONG><a name="[77]"></a>dump_data</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, arch_main.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 </UL>
 
 <P><STRONG><a name="[16]"></a>platform_reset</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, arch_main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
+<BR><BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_finish_transfers
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_finish_transfers
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[7b]"></a>bdaddr_env_init</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, arch_main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<P><STRONG><a name="[7c]"></a>bdaddr_env_init</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, arch_main.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
 <P><STRONG><a name="[8]"></a>user_timer_cb</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, arch_main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_triger
+<BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_triger
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[7f]"></a>user_timer_init</STRONG> (Thumb, 78 bytes, Stack size 0 bytes, arch_main.o(.text), UNUSED)
+<P><STRONG><a name="[80]"></a>user_timer_init</STRONG> (Thumb, 78 bytes, Stack size 0 bytes, arch_main.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_set
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwm_init
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icu_set_sleep_mode
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwm_init
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icu_set_sleep_mode
 </UL>
 
-<P><STRONG><a name="[82]"></a>rom_env_init</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, arch_main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<P><STRONG><a name="[83]"></a>rom_env_init</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, arch_main.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
-</UL>
-
-<P><STRONG><a name="[8d]"></a>rwip_eif_api_init</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, arch_main.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
-<P><STRONG><a name="[87]"></a>rw_main</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, arch_main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_feed
+<P><STRONG><a name="[8e]"></a>rwip_eif_api_init</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, arch_main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+</UL>
+
+<P><STRONG><a name="[88]"></a>rw_main</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, arch_main.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_feed
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_cb_register
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_sleep_init
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_schedule
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intc_init
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icu_init
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_init
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;emi_init
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_eif_api_init
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rom_env_init
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bdaddr_env_init
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_cb_register
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_sleep_init
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_schedule
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intc_init
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icu_init
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_init
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;emi_init
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_eif_api_init
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rom_env_init
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bdaddr_env_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_Reset (via Veneer)
-</UL>
-
-<P><STRONG><a name="[b1]"></a>rwip_eif_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, arch_main.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_Reset (via Veneer)
 </UL>
 
-<P><STRONG><a name="[97]"></a>rwble_hl_init</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rwble_hl.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;l2cm_init
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;attm_init
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattm_init
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_init
+<P><STRONG><a name="[b2]"></a>rwip_eif_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, arch_main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+
+<P><STRONG><a name="[98]"></a>rwble_hl_init</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rwble_hl.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;l2cm_init
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;attm_init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattm_init
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
 <P><STRONG><a name="[f]"></a>rwble_hl_reset</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rwble_hl.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;l2cm_init
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;attm_init
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattm_init
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_init
+<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;l2cm_init
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;attm_init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattm_init
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[9c]"></a>rwble_init</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rwble.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llm_ble_ready
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llm_init
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_init
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;em_buf_init
+<P><STRONG><a name="[9d]"></a>rwble_init</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rwble.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llm_ble_ready
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llm_init
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_init
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;em_buf_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
-<P><STRONG><a name="[a2]"></a>rwble_reset</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, rwble.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llm_init
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_core_reset
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_init
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_reset
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;em_buf_init
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+<P><STRONG><a name="[a3]"></a>rwble_reset</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, rwble.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llm_init
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_core_reset
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_init
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_reset
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;em_buf_init
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_reset
 </UL>
 
-<P><STRONG><a name="[c1]"></a>rwble_sleep_check</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, rwble.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<P><STRONG><a name="[c2]"></a>rwble_sleep_check</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, rwble.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
 </UL>
 
-<P><STRONG><a name="[bb]"></a>rwble_version</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, rwble.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_version
+<P><STRONG><a name="[bc]"></a>rwble_version</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, rwble.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_version
 </UL>
 
-<P><STRONG><a name="[a5]"></a>rwble_isr</STRONG> (Thumb, 556 bytes, Stack size 0 bytes, rwble.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_end
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_sw_isr
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_finetimer_isr
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_rx_isr
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_end_isr
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_timer_isr
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_crypt_isr
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_feed
+<P><STRONG><a name="[a6]"></a>rwble_isr</STRONG> (Thumb, 556 bytes, Stack size 0 bytes, rwble.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_end
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_sw_isr
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_finetimer_isr
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_rx_isr
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_end_isr
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_timer_isr
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_crypt_isr
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_feed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Exception
-</UL>
-
-<P><STRONG><a name="[bf]"></a>rwip_check_wakeup_boundary</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, rwip.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Exception
 </UL>
 
-<P><STRONG><a name="[92]"></a>rwip_init</STRONG> (Thumb, 130 bytes, Stack size 0 bytes, rwip.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ahi_init
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;h4tl_init
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_init
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_init
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_init
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_mem_init
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_init
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_eif_get
+<P><STRONG><a name="[c0]"></a>rwip_check_wakeup_boundary</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, rwip.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
 </UL>
-<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+
+<P><STRONG><a name="[93]"></a>rwip_init</STRONG> (Thumb, 130 bytes, Stack size 0 bytes, rwip.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_init
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_hl_init
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ahi_init
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;h4tl_init
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_init
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_init
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_init
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_mem_init
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_init
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_eif_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
 <P><STRONG><a name="[10]"></a>rwip_reset</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, rwip.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_reset
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_init
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_flush
+<BR><BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_reset
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_reset
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_init
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_flush
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[ba]"></a>rwip_version</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rwip.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_version
+<P><STRONG><a name="[bb]"></a>rwip_version</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rwip.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_version
 </UL>
 
-<P><STRONG><a name="[95]"></a>rwip_schedule</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, rwip.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_event_schedule
+<P><STRONG><a name="[96]"></a>rwip_schedule</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, rwip.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_event_schedule
 </UL>
-<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
 <P><STRONG><a name="[11]"></a>rwip_prevent_sleep_set</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, rwip.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
+<BR><BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_timer_init
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_timer_init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[bd]"></a>rwip_sleep</STRONG> (Thumb, 366 bytes, Stack size 0 bytes, rwip.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_uart_stop
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_check_wakeup_boundary
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_sleep_check
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;h4tl_stop
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_sleep_check
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_enter
-<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_sleep_check
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_sleep_check
+<P><STRONG><a name="[be]"></a>rwip_sleep</STRONG> (Thumb, 366 bytes, Stack size 0 bytes, rwip.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_uart_stop
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_check_wakeup_boundary
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_sleep_check
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;h4tl_stop
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_sleep_check
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_enter
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_sleep_check
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_sleep_check
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_set
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_err
 </UL>
 
-<P><STRONG><a name="[a6]"></a>rwip_wakeup</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, rwip.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;h4tl_start
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_wakeup
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_feed
+<P><STRONG><a name="[a7]"></a>rwip_wakeup</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, rwip.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;h4tl_start
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_wakeup
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_feed
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
 </UL>
 
 <P><STRONG><a name="[12]"></a>rwip_prevent_sleep_clear</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, rwip.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
+<BR><BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_irq (via BLX)
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_disable_fiq (via BLX)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_end
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_end
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[a7]"></a>rwip_wakeup_end</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, rwip.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_wakeup_end
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_event_set
+<P><STRONG><a name="[a8]"></a>rwip_wakeup_end</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, rwip.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_wakeup_end
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_event_set
 <LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_prevent_sleep_clear
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
 </UL>
 
 <P><STRONG><a name="[14]"></a>rwip_us_2_lpcycles</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, rwip.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<BR><BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
 <BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_delay_set
 </UL>
@@ -868,66 +870,67 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[8b]"></a>emi_init</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, emi.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<P><STRONG><a name="[8c]"></a>emi_init</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, emi.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
-<P><STRONG><a name="[91]"></a>flash_init</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<P><STRONG><a name="[92]"></a>flash_init</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
-<P><STRONG><a name="[cb]"></a>flash_readword</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_status
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_start
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_clearKey
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeKey
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_unlock
+<P><STRONG><a name="[cc]"></a>flash_readword</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_status
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_start
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_clearKey
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeKey
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_unlock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
-</UL>
-
-<P><STRONG><a name="[d1]"></a>flash_writeword</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_status
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_start
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_clearKey
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeKey
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_unlock
-</UL>
-<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
 </UL>
 
-<P><STRONG><a name="[d2]"></a>flash_erase_sector</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, flash.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_status
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_start
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_clearKey
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeKey
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_unlock
+<P><STRONG><a name="[d2]"></a>flash_writeword</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_status
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_start
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_clearKey
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeKey
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_unlock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase
-</UL>
-
-<P><STRONG><a name="[d3]"></a>flash_erase</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, flash.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
-</UL>
-<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBleName
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
 </UL>
 
-<P><STRONG><a name="[85]"></a>flash_write</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
+<P><STRONG><a name="[d3]"></a>flash_erase_sector</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_status
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_start
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_clearKey
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeKey
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_unlock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase
+</UL>
+
+<P><STRONG><a name="[85]"></a>flash_erase</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_handler
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBleName
+</UL>
+
+<P><STRONG><a name="[86]"></a>flash_write</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
 </UL>
 <BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oad_updating_user_section_pro
 <LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_handler
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBleName
 </UL>
 
-<P><STRONG><a name="[7c]"></a>flash_read</STRONG> (Thumb, 102 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<P><STRONG><a name="[7d]"></a>flash_read</STRONG> (Thumb, 102 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oadImgBlockWrite
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oadImgIdentifyWrite
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bdaddr_env_init
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bdaddr_env_init
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_start_advertising
 </UL>
 
@@ -936,10 +939,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d4]"></a>gpio_set</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_triger
+<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_triger
 </UL>
 
-<P><STRONG><a name="[7e]"></a>gpio_triger</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gpio.o(.text))
+<P><STRONG><a name="[7f]"></a>gpio_triger</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gpio.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_set
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_timer_cb
@@ -948,23 +951,23 @@ Global Symbols
 <P><STRONG><a name="[d5]"></a>gpio_isr</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, gpio.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception
 </UL>
 
 <P><STRONG><a name="[d6]"></a>gpio_test_init</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_config
 </UL>
 
-<P><STRONG><a name="[8a]"></a>system_sleep_init</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, icu.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<P><STRONG><a name="[8b]"></a>system_sleep_init</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, icu.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
-<P><STRONG><a name="[88]"></a>icu_init</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, icu.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<P><STRONG><a name="[89]"></a>icu_init</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, icu.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
-<P><STRONG><a name="[80]"></a>icu_set_sleep_mode</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, icu.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_timer_init
+<P><STRONG><a name="[81]"></a>icu_set_sleep_mode</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, icu.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_timer_init
 </UL>
 
 <P><STRONG><a name="[d8]"></a>enter_deep_sleep</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, icu.o(.text), UNUSED)
@@ -972,59 +975,59 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[da]"></a>cpu_wakeup</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, icu.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Exception
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Exception
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception
 </UL>
 
-<P><STRONG><a name="[8e]"></a>intc_init</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, intc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<P><STRONG><a name="[8f]"></a>intc_init</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, intc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
-<P><STRONG><a name="[74]"></a>IRQ_Exception</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, intc.o(.text))
+<P><STRONG><a name="[75]"></a>IRQ_Exception</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, intc.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_isr
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwm_isr
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cpu_wakeup
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_isr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSirq_IRQ_Handler (via BLX)
+<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSirq_IRQ_Handler (via BLX)
 </UL>
 
-<P><STRONG><a name="[72]"></a>FIQ_Exception</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, intc.o(.text))
+<P><STRONG><a name="[73]"></a>FIQ_Exception</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, intc.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwm_isr
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cpu_wakeup
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSirq_FIQ_Handler (via BLX)
+<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSirq_FIQ_Handler (via BLX)
 </UL>
 
-<P><STRONG><a name="[81]"></a>pwm_init</STRONG> (Thumb, 204 bytes, Stack size 0 bytes, pwm.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_timer_init
+<P><STRONG><a name="[82]"></a>pwm_init</STRONG> (Thumb, 204 bytes, Stack size 0 bytes, pwm.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_timer_init
 </UL>
 
 <P><STRONG><a name="[dc]"></a>pwm_isr</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, pwm.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Exception
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Exception
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception
 </UL>
 
-<P><STRONG><a name="[8c]"></a>timer_init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, timer.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<P><STRONG><a name="[8d]"></a>timer_init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, timer.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
 <P><STRONG><a name="[dd]"></a>timer_isr</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, timer.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_event_set
+<BR><BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_event_set
 </UL>
 
-<P><STRONG><a name="[7a]"></a>wdt_enable</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, wdt.o(.text))
+<P><STRONG><a name="[7b]"></a>wdt_enable</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, wdt.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oad_updating_user_section_pro
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_reset
 <LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_handler
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_start_advertising
 </UL>
 
-<P><STRONG><a name="[96]"></a>wdt_feed</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, wdt.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<P><STRONG><a name="[97]"></a>wdt_feed</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, wdt.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
 <P><STRONG><a name="[19]"></a>Read_Uart_Buf</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, uart.o(.text))
@@ -1046,14 +1049,15 @@ Global Symbols
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oad_updating_user_section_begin
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oadImgIdentifyReq
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_isr
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_reset
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dump_data
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_warn
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dump_data
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_warn
 <LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_param
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_err
 <LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_handler
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_get_dev_info_req_ind_handler
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_start_advertising
 <LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_read_req_ind_handler
@@ -1074,24 +1078,24 @@ Global Symbols
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putchar
 </UL>
 
-<P><STRONG><a name="[8f]"></a>uart_init</STRONG> (Thumb, 136 bytes, Stack size 0 bytes, uart.o(.text))
+<P><STRONG><a name="[90]"></a>uart_init</STRONG> (Thumb, 136 bytes, Stack size 0 bytes, uart.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_stack_register
 </UL>
-<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
 <P><STRONG><a name="[1d]"></a>uart_flow_on</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, uart.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
 <P><STRONG><a name="[1a]"></a>uart_clear_rxfifo</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<BR><BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
 <P><STRONG><a name="[1e]"></a>uart_flow_off</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, uart.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[79]"></a>uart_finish_transfers</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, uart.o(.text))
+<P><STRONG><a name="[7a]"></a>uart_finish_transfers</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, uart.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_reset
 </UL>
 
@@ -1105,20 +1109,20 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
-<P><STRONG><a name="[120]"></a>uart_send</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fff2_writer_req_handler
+<P><STRONG><a name="[145]"></a>uart_send</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDatePackPro
 </UL>
 
-<P><STRONG><a name="[90]"></a>uart_cb_register</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
+<P><STRONG><a name="[91]"></a>uart_cb_register</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
 <P><STRONG><a name="[db]"></a>uart_isr</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception
+<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Exception
 </UL>
 
-<P><STRONG><a name="[c4]"></a>check_uart_stop</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<P><STRONG><a name="[c5]"></a>check_uart_stop</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
 </UL>
 
 <P><STRONG><a name="[e5]"></a>Delay_ms</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, rf_xvr.o(.text))
@@ -1128,7 +1132,7 @@ Global Symbols
 
 <P><STRONG><a name="[e4]"></a>kmod_calibration</STRONG> (Thumb, 290 bytes, Stack size 0 bytes, rf_xvr.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initial_xver_BK3432_openLoop
 </UL>
@@ -1136,13 +1140,13 @@ Global Symbols
 <P><STRONG><a name="[e6]"></a>initial_xver_BK3432_openLoop</STRONG> (Thumb, 314 bytes, Stack size 0 bytes, rf_xvr.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kmod_calibration
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init
 </UL>
 
-<P><STRONG><a name="[b0]"></a>rf_init</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, rf_xvr.o(.text))
+<P><STRONG><a name="[b1]"></a>rf_init</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, rf_xvr.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initial_xver_BK3432_openLoop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
 <P><STRONG><a name="[d9]"></a>Delay_us</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, rf_xvr.o(.text), UNUSED)
@@ -1217,7 +1221,7 @@ Global Symbols
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_src_task_get
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fff0s_fff1_level_upd_req_handler
 </UL>
@@ -1235,7 +1239,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[105]"></a>oad_save_reciveData</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, oads.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR><BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oadImgBlockWrite
 </UL>
@@ -1247,9 +1251,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[107]"></a>oad_updating_user_section_pro</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, oads.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
+<BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
 </UL>
 
 <P><STRONG><a name="[10d]"></a>oad_updating_user_section_end</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, oads.o(.text))
@@ -1261,9 +1265,9 @@ Global Symbols
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oadImgBlockReq
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oadImgIdentifyReq
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc1_writer_req_handler
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc1_writer_req_handler
 <LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
 </UL>
 
@@ -1273,7 +1277,7 @@ Global Symbols
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oad_save_reciveData
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oadImgBlockReq
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
 </UL>
@@ -1347,10 +1351,10 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
 <P><STRONG><a name="[a]"></a>prf_get_task_from_id</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, prf.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc2_ntf_req
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc1_ntf_req
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_oads_enable_prf
+<BR><BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc2_ntf_req
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_ffc1_ntf_req
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_oads_enable_prf
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
 <LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_batt_send_lvl
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_batt_enable_prf
 </UL>
@@ -1360,39 +1364,40 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_read_req_ind_handler
 </UL>
 
-<P><STRONG><a name="[b7]"></a>appm_init</STRONG> (Thumb, 134 bytes, Stack size 0 bytes, app.o(.text))
+<P><STRONG><a name="[b8]"></a>appm_init</STRONG> (Thumb, 136 bytes, Stack size 0 bytes, app.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 <LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_task_create
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_dis_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_init
 </UL>
 
-<P><STRONG><a name="[121]"></a>appm_add_svc</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, app.o(.text))
+<P><STRONG><a name="[122]"></a>appm_add_svc</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, app.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_cmp_evt_handler
 </UL>
 
-<P><STRONG><a name="[86]"></a>appm_disconnect</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, app.o(.text))
+<P><STRONG><a name="[87]"></a>appm_disconnect</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, app.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_handler
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sys_timer_handler
 </UL>
 
-<P><STRONG><a name="[118]"></a>appm_start_advertising</STRONG> (Thumb, 296 bytes, Stack size 0 bytes, app.o(.text))
+<P><STRONG><a name="[118]"></a>appm_start_advertising</STRONG> (Thumb, 298 bytes, Stack size 0 bytes, app.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_get
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_disconnect_ind_handler
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
@@ -1418,20 +1423,20 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_get
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 
 <P><STRONG><a name="[11b]"></a>appm_get_dev_name</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, app.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR><BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_get_dev_info_req_ind_handler
 </UL>
 
 <P><STRONG><a name="[11c]"></a>SetBleName</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, app.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<BR><BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 
 <P><STRONG><a name="[4f]"></a>app_batt_add_bas</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, app_batt.o(.text))
@@ -1455,7 +1460,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[117]"></a>app_dis_init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, app_dis.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
+<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
 </UL>
 
 <P><STRONG><a name="[4e]"></a>app_dis_add_dis</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, app_dis.o(.text))
@@ -1470,13 +1475,13 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app.o(.constdata)
 </UL>
-<P><STRONG><a name="[84]"></a>app_fff1_send_lvl</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, app_fff0.o(.text))
+<P><STRONG><a name="[120]"></a>app_fff1_send_lvl</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, app_fff0.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
 <LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_get_task_from_id
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_handler
+<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sys_timer_handler
 </UL>
 
 <P><STRONG><a name="[50]"></a>app_oad_add_oads</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, app_oads.o(.text))
@@ -1485,110 +1490,172 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app.o(.constdata)
 </UL>
-<P><STRONG><a name="[124]"></a>app_oads_enable_prf</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, app_oads.o(.text), UNUSED)
+<P><STRONG><a name="[12a]"></a>app_oads_enable_prf</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, app_oads.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
 <LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_get_task_from_id
 </UL>
 
-<P><STRONG><a name="[125]"></a>app_ffc1_ntf_req</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, app_oads.o(.text), UNUSED)
+<P><STRONG><a name="[12b]"></a>app_ffc1_ntf_req</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, app_oads.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
 <LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_get_task_from_id
 </UL>
 
-<P><STRONG><a name="[126]"></a>app_ffc2_ntf_req</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, app_oads.o(.text), UNUSED)
+<P><STRONG><a name="[12c]"></a>app_ffc2_ntf_req</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, app_oads.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
 <LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_get_task_from_id
 </UL>
 
-<P><STRONG><a name="[127]"></a>__aeabi_uldivmod</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, uldiv.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<P><STRONG><a name="[124]"></a>aes</STRONG> (Thumb, 242 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertToIntArray
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mixColumns
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertArrayToStr
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;extendKey
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subBytes
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shiftRows
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addRoundKey
 </UL>
-<BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
-<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-</UL>
-
-<P><STRONG><a name="[12a]"></a>__aeabi_dadd</STRONG> (Thumb, 328 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-</UL>
-<BR>[Called By]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sys_timer_handler
 </UL>
 
-<P><STRONG><a name="[12e]"></a>__aeabi_dsub</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<P><STRONG><a name="[140]"></a>deAes</STRONG> (Thumb, 292 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getArrayFrom4W
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertToIntArray
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertArrayToStr
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deMixColumns
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deSubBytes
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deShiftRows
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;extendKey
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addRoundKey
+</UL>
+<BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDatePackPro
 </UL>
 
-<P><STRONG><a name="[12f]"></a>__aeabi_drsub</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<P><STRONG><a name="[125]"></a>CRC16_CCITT_FALSE</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, crc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sys_timer_handler
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDatePackPro
 </UL>
 
-<P><STRONG><a name="[130]"></a>__aeabi_dmul</STRONG> (Thumb, 202 bytes, Stack size 0 bytes, dmul.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-</UL>
-<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-</UL>
-
-<P><STRONG><a name="[131]"></a>__aeabi_ddiv</STRONG> (Thumb, 234 bytes, Stack size 0 bytes, ddiv.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
-</UL>
-<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<P><STRONG><a name="[128]"></a>UartParaClear</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, user.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sys_timer_handler
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDatePackPro
 </UL>
 
-<P><STRONG><a name="[132]"></a>__aeabi_d2ulz</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
-</UL>
-<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-</UL>
-
-<P><STRONG><a name="[137]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<P><STRONG><a name="[127]"></a>UartRsp</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, user.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RxDateCheck
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sys_timer_handler
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDatePackPro
 </UL>
 
-<P><STRONG><a name="[129]"></a>__aeabi_llsl</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<P><STRONG><a name="[144]"></a>RxDateCheck</STRONG> (Thumb, 88 bytes, Stack size 0 bytes, user.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartRsp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDatePackPro
 </UL>
 
-<P><STRONG><a name="[128]"></a>__aeabi_llsr</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<P><STRONG><a name="[121]"></a>UartDatePackPro</STRONG> (Thumb, 186 bytes, Stack size 0 bytes, user.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_send
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RxDateCheck
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartRsp
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartParaClear
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRC16_CCITT_FALSE
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fff2_writer_req_handler
 </UL>
 
-<P><STRONG><a name="[12b]"></a>__aeabi_lasr</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<P><STRONG><a name="[126]"></a>TxSendDatePackPro</STRONG> (Thumb, 176 bytes, Stack size 0 bytes, user.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sys_timer_handler
 </UL>
 
-<P><STRONG><a name="[12d]"></a>_double_round</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, depilogue.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<P><STRONG><a name="[146]"></a>__aeabi_uldivmod</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, uldiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[12c]"></a>_double_epilogue</STRONG> (Thumb, 164 bytes, Stack size 0 bytes, depilogue.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_clz (via BLX)
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<P><STRONG><a name="[149]"></a>__aeabi_dadd</STRONG> (Thumb, 328 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<BR>[Called By]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[134]"></a>__0vsprintf</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, printfa.o(i.__0vsprintf), UNUSED)
+<P><STRONG><a name="[14d]"></a>__aeabi_dsub</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[14e]"></a>__aeabi_drsub</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[14f]"></a>__aeabi_dmul</STRONG> (Thumb, 202 bytes, Stack size 0 bytes, dmul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[150]"></a>__aeabi_ddiv</STRONG> (Thumb, 234 bytes, Stack size 0 bytes, ddiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[151]"></a>__aeabi_d2ulz</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[156]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[148]"></a>__aeabi_llsl</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+</UL>
+
+<P><STRONG><a name="[147]"></a>__aeabi_llsr</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+</UL>
+
+<P><STRONG><a name="[14a]"></a>__aeabi_lasr</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[14c]"></a>_double_round</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, depilogue.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[14b]"></a>_double_epilogue</STRONG> (Thumb, 164 bytes, Stack size 0 bytes, depilogue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_clz (via BLX)
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[153]"></a>__0vsprintf</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, printfa.o(i.__0vsprintf), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
 <P><STRONG><a name="[de]"></a>vsprintf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, printfa.o(i.__0vsprintf))
@@ -1598,78 +1665,78 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[1f]"></a>uart_rx_handler</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, arch_main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
+<P><STRONG><a name="[1f]"></a>uart_rx_handler</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, arch_main.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_disconnect
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_disconnect
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arch_main.o(.text)
 </UL>
 <P><STRONG><a name="[1]"></a>Undefined</STRONG> (ARM, 0 bytes, Stack size 0 bytes, boot_vectors.o(SYS_BOOT))
-<BR><BR>[Calls]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undefined_Exception (via Veneer)
+<BR><BR>[Calls]<UL><LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undefined_Exception (via Veneer)
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> boot_vectors.o(SYS_BOOT)
 </UL>
 <P><STRONG><a name="[2]"></a>SoftwareInterrupt</STRONG> (ARM, 0 bytes, Stack size 0 bytes, boot_vectors.o(SYS_BOOT))
-<BR><BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SoftwareInterrupt_Exception (via Veneer)
+<BR><BR>[Calls]<UL><LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SoftwareInterrupt_Exception (via Veneer)
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> boot_vectors.o(SYS_BOOT)
 </UL>
 <P><STRONG><a name="[3]"></a>PrefetchAbort</STRONG> (ARM, 0 bytes, Stack size 0 bytes, boot_vectors.o(SYS_BOOT))
-<BR><BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefetchAbort_Exception (via Veneer)
+<BR><BR>[Calls]<UL><LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefetchAbort_Exception (via Veneer)
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> boot_vectors.o(SYS_BOOT)
 </UL>
 <P><STRONG><a name="[4]"></a>DataAbort</STRONG> (ARM, 0 bytes, Stack size 0 bytes, boot_vectors.o(SYS_BOOT))
-<BR><BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataAbort_Exception (via Veneer)
+<BR><BR>[Calls]<UL><LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataAbort_Exception (via Veneer)
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> boot_vectors.o(SYS_BOOT)
 </UL>
 <P><STRONG><a name="[6]"></a>IRQ_Handler</STRONG> (ARM, 0 bytes, Stack size 0 bytes, boot_vectors.o(SYS_BOOT))
-<BR><BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSirq_IRQ_Handler
+<BR><BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSirq_IRQ_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> boot_vectors.o(SYS_BOOT)
 </UL>
 <P><STRONG><a name="[5]"></a>sys_reserved</STRONG> (ARM, 0 bytes, Stack size 0 bytes, boot_vectors.o(SYS_BOOT))
-<BR><BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reserved_Exception (via Veneer)
+<BR><BR>[Calls]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reserved_Exception (via Veneer)
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> boot_vectors.o(SYS_BOOT)
 </UL>
 <P><STRONG><a name="[7]"></a>FIQ_Handler</STRONG> (ARM, 0 bytes, Stack size 0 bytes, boot_vectors.o(SYS_BOOT))
-<BR><BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSirq_FIQ_Handler
+<BR><BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSirq_FIQ_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> boot_vectors.o(SYS_BOOT)
 </UL>
-<P><STRONG><a name="[cd]"></a>flash_unlock</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
+<P><STRONG><a name="[ce]"></a>flash_unlock</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
 </UL>
 
-<P><STRONG><a name="[cc]"></a>flash_writeKey</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
+<P><STRONG><a name="[cd]"></a>flash_writeKey</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
 </UL>
 
-<P><STRONG><a name="[d0]"></a>flash_clearKey</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
+<P><STRONG><a name="[d1]"></a>flash_clearKey</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
 </UL>
 
-<P><STRONG><a name="[ce]"></a>flash_start</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
+<P><STRONG><a name="[cf]"></a>flash_start</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
 </UL>
 
-<P><STRONG><a name="[cf]"></a>flash_status</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, flash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
+<P><STRONG><a name="[d0]"></a>flash_status</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, flash.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_sector
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_writeword
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_readword
 </UL>
 
 <P><STRONG><a name="[25]"></a>rf_reset</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rf_xvr.o(.text))
@@ -1699,8 +1766,8 @@ Local Symbols
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_free
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_malloc
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> bass.o(.constdata)
 </UL>
@@ -1806,7 +1873,7 @@ Local Symbols
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_free
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_malloc
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> diss_task.o(.constdata)
 </UL>
@@ -1818,7 +1885,7 @@ Local Symbols
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> diss_task.o(.constdata)
 </UL>
@@ -1829,7 +1896,7 @@ Local Symbols
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> diss_task.o(.constdata)
 </UL>
@@ -1839,7 +1906,7 @@ Local Symbols
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_free
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_malloc
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> fff0s.o(.constdata)
 </UL>
@@ -1875,7 +1942,7 @@ Local Symbols
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_env_get
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> fff0s_task.o(.constdata)
 </UL>
@@ -1965,7 +2032,7 @@ Local Symbols
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> oads_task.o(.constdata)
 </UL>
@@ -1976,8 +2043,8 @@ Local Symbols
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> oads_task.o(.constdata)
 </UL>
@@ -2012,7 +2079,7 @@ Local Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8 (via BLX)
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_dis.o(.constdata)
 </UL>
@@ -2025,15 +2092,15 @@ Local Symbols
 <P><STRONG><a name="[56]"></a>app_fff0_msg_dflt_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_fff0.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> app_fff0.o(.constdata)
 </UL>
-<P><STRONG><a name="[59]"></a>fff2_writer_req_handler</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, app_fff0.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_send
+<P><STRONG><a name="[59]"></a>fff2_writer_req_handler</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, app_fff0.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDatePackPro
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_fff0.o(.constdata)
 </UL>
 <P><STRONG><a name="[5a]"></a>fff1_period_ntf_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_fff0.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> app_fff0.o(.constdata)
 </UL>
-<P><STRONG><a name="[123]"></a>appm_get_handler</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, app_task.o(.text))
+<P><STRONG><a name="[129]"></a>appm_get_handler</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, app_task.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_msg_handler
 </UL>
 
@@ -2047,9 +2114,9 @@ Local Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_start_advertising
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_add_svc
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_add_svc
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
@@ -2067,11 +2134,12 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
-<P><STRONG><a name="[60]"></a>gapc_connection_req_ind_handler</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, app_task.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_set
+<P><STRONG><a name="[60]"></a>gapc_connection_req_ind_handler</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, app_task.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_set
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_batt_enable_prf
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_start_advertising
 </UL>
@@ -2094,8 +2162,20 @@ Local Symbols
 <P><STRONG><a name="[69]"></a>app_period_timer_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_task.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
-<P><STRONG><a name="[5b]"></a>appm_msg_handler</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, app_task.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_get_handler
+<P><STRONG><a name="[6a]"></a>app_sys_timer_handler</STRONG> (Thumb, 250 bytes, Stack size 0 bytes, app_task.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_set
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_disconnect
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartRsp
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartParaClear
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TxSendDatePackPro
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRC16_CCITT_FALSE
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_fff1_send_lvl
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[5b]"></a>appm_msg_handler</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, app_task.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_get_handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
@@ -2119,57 +2199,195 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
-<P><STRONG><a name="[6b]"></a>oads_enable_rsp_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
+<P><STRONG><a name="[6c]"></a>oads_enable_rsp_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> app_oads.o(.constdata)
 </UL>
-<P><STRONG><a name="[6a]"></a>app_oads_msg_dflt_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
+<P><STRONG><a name="[6b]"></a>app_oads_msg_dflt_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> app_oads.o(.constdata)
 </UL>
-<P><STRONG><a name="[6c]"></a>app_ffc1_writer_req_handler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, app_oads.o(.text))
+<P><STRONG><a name="[6d]"></a>app_ffc1_writer_req_handler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, app_oads.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oadImgIdentifyWrite
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_oads.o(.constdata)
 </UL>
-<P><STRONG><a name="[6e]"></a>app_ffc2_writer_req_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
+<P><STRONG><a name="[6f]"></a>app_ffc2_writer_req_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> app_oads.o(.constdata)
 </UL>
-<P><STRONG><a name="[6d]"></a>oads_ffc1_upd_rsp_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
+<P><STRONG><a name="[6e]"></a>oads_ffc1_upd_rsp_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> app_oads.o(.constdata)
 </UL>
-<P><STRONG><a name="[6f]"></a>oads_ffc2_upd_rsp_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
+<P><STRONG><a name="[70]"></a>oads_ffc2_upd_rsp_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_oads.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> app_oads.o(.constdata)
 </UL>
-<P><STRONG><a name="[136]"></a>_fp_digits</STRONG> (Thumb, 344 bytes, Stack size 0 bytes, printfa.o(i._fp_digits), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
-<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+<P><STRONG><a name="[12d]"></a>addRoundKey</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;splitIntToArray
 </UL>
-<BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes
 </UL>
 
-<P><STRONG><a name="[135]"></a>_printf_core</STRONG> (Thumb, 1764 bytes, Stack size 0 bytes, printfa.o(i._printf_core), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
-<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-</UL>
-<BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0vsprintf
+<P><STRONG><a name="[130]"></a>leftLoop4int</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;extendKey
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shiftRows
 </UL>
 
-<P><STRONG><a name="[139]"></a>_printf_post_padding</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, printfa.o(i._printf_post_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[12f]"></a>shiftRows</STRONG> (Thumb, 88 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;leftLoop4int
+</UL>
+<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes
 </UL>
 
-<P><STRONG><a name="[138]"></a>_printf_pre_padding</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, printfa.o(i._printf_pre_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[131]"></a>subBytes</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNumFromSBox
+</UL>
+<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes
+</UL>
+
+<P><STRONG><a name="[133]"></a>GFMul</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul9
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul12
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mixColumns
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deMixColumns
+</UL>
+
+<P><STRONG><a name="[137]"></a>extendKey</STRONG> (Thumb, 178 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNumFromSBox
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;splitIntToArray
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;leftLoop4int
+</UL>
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes
+</UL>
+
+<P><STRONG><a name="[13c]"></a>rightLoop4int</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deShiftRows
+</UL>
+
+<P><STRONG><a name="[13b]"></a>deShiftRows</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rightLoop4int
+</UL>
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
+</UL>
+
+<P><STRONG><a name="[13d]"></a>deSubBytes</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getLeft4Bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
+</UL>
+
+<P><STRONG><a name="[13f]"></a>deMixColumns</STRONG> (Thumb, 156 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
+</UL>
+
+<P><STRONG><a name="[13a]"></a>convertArrayToStr</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes
+</UL>
+
+<P><STRONG><a name="[12e]"></a>splitIntToArray</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getArrayFrom4W
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;extendKey
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addRoundKey
+</UL>
+
+<P><STRONG><a name="[13e]"></a>getLeft4Bit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNumFromSBox
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deSubBytes
+</UL>
+
+<P><STRONG><a name="[132]"></a>getNumFromSBox</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getLeft4Bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;extendKey
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subBytes
+</UL>
+
+<P><STRONG><a name="[135]"></a>GFMul2</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul8
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul4
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul
+</UL>
+
+<P><STRONG><a name="[134]"></a>GFMul12</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul8
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul
+</UL>
+
+<P><STRONG><a name="[136]"></a>GFMul9</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul
+</UL>
+
+<P><STRONG><a name="[139]"></a>mixColumns</STRONG> (Thumb, 142 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes
+</UL>
+
+<P><STRONG><a name="[138]"></a>convertToIntArray</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes
+</UL>
+
+<P><STRONG><a name="[141]"></a>getArrayFrom4W</STRONG> (Thumb, 88 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;splitIntToArray
+</UL>
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
+</UL>
+
+<P><STRONG><a name="[143]"></a>GFMul4</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul8
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul12
+</UL>
+
+<P><STRONG><a name="[142]"></a>GFMul8</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, aes.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul4
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul9
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GFMul12
+</UL>
+
+<P><STRONG><a name="[155]"></a>_fp_digits</STRONG> (Thumb, 344 bytes, Stack size 0 bytes, printfa.o(i._fp_digits), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+</UL>
+<BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[154]"></a>_printf_core</STRONG> (Thumb, 1764 bytes, Stack size 0 bytes, printfa.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0vsprintf
+</UL>
+
+<P><STRONG><a name="[158]"></a>_printf_post_padding</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, printfa.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[157]"></a>_printf_pre_padding</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, printfa.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
 <P><STRONG><a name="[28]"></a>_sputc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, printfa.o(i._sputc))
-<BR><BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0vsprintf
+<BR><BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0vsprintf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0vsprintf)
 </UL><P>

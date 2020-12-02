@@ -41,7 +41,7 @@
 #include "rwip.h"
 #include "rwip_task.h"      // Task definitions
 #include "ke_task.h"        // Kernel Task
-
+#include "user.h"
 /*
  * DEFINES
  ****************************************************************************************
@@ -49,8 +49,10 @@
 
 /// Number of APP Task Instances
 #define APP_IDX_MAX                 (1)
-
-
+#define TIMER_UNIT                  (1)//ZY
+#define Tx_Max_Numb					(20)
+#define Send_Delay_Numb				(15)
+#define NAME_ADDR					0x00018800
 /*
  * ENUMERATIONS
  ****************************************************************************************
@@ -82,6 +84,8 @@ enum appm_msg
     APP_PARAM_UPDATE_REQ_IND,
 	
 	APP_PERIOD_TIMER,	
+	
+	APP_SYS_TIMER,
 };
 
 
@@ -89,7 +93,12 @@ enum appm_msg
  * GLOBAL VARIABLE DECLARATIONS
  ****************************************************************************************
  */
-
+extern uint8_t RxRevFlag;
+extern uint8_t RxRevCnt;
+extern uint32_t connect_timeout_cnt;
+extern uint8_t connect_status_flag;
+extern uint8_t TxDatePackEnd;
+extern uint8_t p_index;
 extern const struct ke_state_handler appm_default_handler;
 extern ke_state_t appm_state[APP_IDX_MAX];
 
