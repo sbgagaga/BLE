@@ -309,7 +309,7 @@ void rw_main(void)
     user_timer_init();
 #endif
 	
-	UART_PRINTF("start \r\n");
+	//UART_PRINTF("start \r\n");
 
 	/*
 	 ***************************************************************************
@@ -371,7 +371,7 @@ static void uart_rx_handler(uint8_t *buf, uint8_t len)
 		flash_erase(FLASH_SPACE_TYPE_MAIN, NAME_ADDR, 7);
 		flash_write(FLASH_SPACE_TYPE_MAIN,NAME_ADDR,7,write);
 		appm_disconnect();
-		UART_PRINTF("write new name \r\n");
+		//UART_PRINTF("write new name \r\n");
 		wdt_enable(20);
 		while(1);
 	}

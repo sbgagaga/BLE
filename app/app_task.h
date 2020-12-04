@@ -52,7 +52,7 @@
 #define TIMER_UNIT                  (1)//ZY
 #define Tx_Max_Numb					(20)
 #define Send_Delay_Numb				(15)
-#define NAME_ADDR					0x00018800
+#define NAME_ADDR					0x0001A800
 /*
  * ENUMERATIONS
  ****************************************************************************************

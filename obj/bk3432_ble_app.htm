@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\obj\bk3432_ble_app.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\obj\bk3432_ble_app.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Dec 02 15:10:30 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Dec 04 13:40:48 2020
 <BR><P>
 <H3>Maximum Stack Usage =          0 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -667,11 +667,10 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 </UL>
 
-<P><STRONG><a name="[88]"></a>rw_main</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, arch_main.o(.text))
+<P><STRONG><a name="[88]"></a>rw_main</STRONG> (Thumb, 106 bytes, Stack size 0 bytes, arch_main.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_irq (via BLX)
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_enable_fiq (via BLX)
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_feed
-<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_cb_register
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
@@ -1049,17 +1048,11 @@ Global Symbols
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oad_updating_user_section_begin
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oadImgIdentifyReq
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_isr
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_init
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rw_main
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_reset
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dump_data
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_warn
 <LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_param
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_err
-<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_handler
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_get_dev_info_req_ind_handler
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_start_advertising
 <LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_read_req_ind_handler
 <LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
 <LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oads_ffc2_upd_req_handler
@@ -1364,12 +1357,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_read_req_ind_handler
 </UL>
 
-<P><STRONG><a name="[b8]"></a>appm_init</STRONG> (Thumb, 136 bytes, Stack size 0 bytes, app.o(.text))
+<P><STRONG><a name="[b8]"></a>appm_init</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, app.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 <LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_task_create
-<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_dis_init
@@ -1389,13 +1381,12 @@ Global Symbols
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sys_timer_handler
 </UL>
 
-<P><STRONG><a name="[118]"></a>appm_start_advertising</STRONG> (Thumb, 298 bytes, Stack size 0 bytes, app.o(.text))
+<P><STRONG><a name="[118]"></a>appm_start_advertising</STRONG> (Thumb, 264 bytes, Stack size 0 bytes, app.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_get
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
-<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
@@ -1555,7 +1546,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDatePackPro
 </UL>
 
-<P><STRONG><a name="[121]"></a>UartDatePackPro</STRONG> (Thumb, 186 bytes, Stack size 0 bytes, user.o(.text))
+<P><STRONG><a name="[121]"></a>UartDatePackPro</STRONG> (Thumb, 216 bytes, Stack size 0 bytes, user.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_send
 <LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RxDateCheck
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deAes
@@ -1665,9 +1656,8 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[1f]"></a>uart_rx_handler</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, arch_main.o(.text))
+<P><STRONG><a name="[1f]"></a>uart_rx_handler</STRONG> (Thumb, 118 bytes, Stack size 0 bytes, arch_main.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wdt_enable
-<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_disconnect
@@ -2120,10 +2110,9 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
-<P><STRONG><a name="[5e]"></a>gapc_get_dev_info_req_ind_handler</STRONG> (Thumb, 140 bytes, Stack size 0 bytes, app_task.o(.text))
+<P><STRONG><a name="[5e]"></a>gapc_get_dev_info_req_ind_handler</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, app_task.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_get_dev_name
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
@@ -2134,12 +2123,11 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
-<P><STRONG><a name="[60]"></a>gapc_connection_req_ind_handler</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, app_task.o(.text))
+<P><STRONG><a name="[60]"></a>gapc_connection_req_ind_handler</STRONG> (Thumb, 102 bytes, Stack size 0 bytes, app_task.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_set
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
-<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_printf
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_batt_enable_prf
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_start_advertising
 </UL>
@@ -2162,7 +2150,7 @@ Local Symbols
 <P><STRONG><a name="[69]"></a>app_period_timer_handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_task.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
-<P><STRONG><a name="[6a]"></a>app_sys_timer_handler</STRONG> (Thumb, 250 bytes, Stack size 0 bytes, app_task.o(.text))
+<P><STRONG><a name="[6a]"></a>app_sys_timer_handler</STRONG> (Thumb, 254 bytes, Stack size 0 bytes, app_task.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_set
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;appm_disconnect
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes

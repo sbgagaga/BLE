@@ -140,13 +140,13 @@ void appm_init()
 		}
 		app_env.dev_name_len = 13;
 		memcpy(&app_env.dev_name[0], name, 13);
-		UART_PRINTF("read new name\r\n");
+		//UART_PRINTF("read new name\r\n");
 	}
 	else
 	{
 		app_env.dev_name_len = 6;
 		memcpy(&app_env.dev_name[0], name+7, 6);
-		UART_PRINTF("read old name\r\n");
+		//UART_PRINTF("read old name\r\n");
 	}
 	
 
@@ -240,10 +240,10 @@ void appm_start_advertising(void)
 				name[i+7]=read[i+1];
 			}
 		}
-		UART_PRINTF("Read:%02x\r\n",read[0]);
-		UART_PRINTF("%c%c%c%c%c%c\r\n",read[1],read[2],read[3],read[4],read[5],read[6]);
+		//UART_PRINTF("Read:%02x\r\n",read[0]);
+		//UART_PRINTF("%c%c%c%c%c%c\r\n",read[1],read[2],read[3],read[4],read[5],read[6]);
 	}
-	UART_PRINTF("start adv\r\n");
+	//UART_PRINTF("start adv\r\n");
     // Check if the advertising procedure is already is progress
     if (ke_state_get(TASK_APP) == APPM_READY)
     {			

@@ -235,7 +235,7 @@ static int gapc_get_dev_info_req_ind_handler(ke_msg_id_t const msgid,
         ke_task_id_t const dest_id,
         ke_task_id_t const src_id)
 {
-	UART_PRINTF("connect succeed\r\n");
+	//UART_PRINTF("connect succeed\r\n");
     switch(param->req)
     {
         case GAPC_DEV_NAME:
@@ -384,7 +384,7 @@ static int gapc_connection_req_ind_handler(ke_msg_id_t const msgid,
 		connect_status_flag=1;
 		/*启动系统定时器*/
 		ke_timer_set(APP_SYS_TIMER,TASK_APP,TIMER_UNIT);//ZY
-		UART_PRINTF("start timer \r\n");
+		//UART_PRINTF("start timer \r\n");
 		#endif	
 	        
     }
@@ -614,7 +614,7 @@ static int app_sys_timer_handler(ke_msg_id_t const msgid,//ZY
 	if(BLERevFlag)
 	{
 		BLERevTimeout++;
-		if(BLERevTimeout>=100)
+		if(BLERevTimeout>=1000)
 		{
 			BLERevTimeout=0;
 			BLERevFlag=0;
